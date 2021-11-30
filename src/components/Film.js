@@ -1,6 +1,8 @@
-const Film = () => {
+const Film = ({name, url}) => {
     return (
-        <h3>I am a film</h3>
+        <div class="film-container">
+        <li><a id="film-card" href={url}>{name}</a></li>
+        </div>
     )
 }
 
